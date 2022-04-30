@@ -9,7 +9,6 @@ jQuery(document).ready(function($) {
     var viewPortSize = $(scrollContainer).height();
     var scrollTop = scrollContainer.scrollTop();
     if(scrollTop >= skillsSection && animated == 0) {
-      console.log("yaa");
       animated = 1;
       animateProgressBars();
     }
@@ -21,7 +20,6 @@ jQuery(document).ready(function($) {
 
   function initProgressBars() {
       $(".skill-fill").each(function() {
-        console.log(this);
         $(this).animate({
             width: 'toggle'
         },
@@ -33,7 +31,6 @@ jQuery(document).ready(function($) {
 
   function animateProgressBars() {
       $(".skill-fill").each(function() {
-        console.log(this);
         $(this).animate({
             width: 'toggle'
         },

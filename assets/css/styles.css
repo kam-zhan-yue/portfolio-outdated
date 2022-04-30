@@ -46,7 +46,7 @@ section {
 
 .scroll-container {
   width: 100%;
-  font-size: 60px;
+  /*font-size: 60px;*/
   height: 100vh;
   overflow: auto;
   scroll-snap-type: y mandatory;
@@ -126,5 +126,28 @@ section {
 .skill-fill {
   height: 14px;
   background: #d13639;
+}
+
+.timeline-header {
+  display: flex;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 3px 1fr;
+  color: white;
+}
+
+.timeline-point {
+  position: initial;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background: white;
+  transform: translateX(-45%);
+  border-radius: 50%;
 }
 
