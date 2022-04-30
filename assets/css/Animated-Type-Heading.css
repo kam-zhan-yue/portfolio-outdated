@@ -40,21 +40,3 @@
   font-weight: 900;
 }
 
-.resume-button {
-  margin: 0 auto;
-  align-items: center;
-}
-
-.center-button-wrapper {
-  display: flex;
-}
-
-.resume-button:hover, .resume-button:active {
-  color: #ffffff;
-  background: #009688;
-}
-
-.resume-button {
-  background: none;
-}
-

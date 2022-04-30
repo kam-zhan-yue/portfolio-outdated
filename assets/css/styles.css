@@ -41,6 +41,7 @@ section {
   color: white;
   margin: 0 auto;
   scroll-snap-align: start;
+  overflow: hidden;
 }
 
 .scroll-container {
@@ -58,11 +59,72 @@ section {
   background: #49b293;
 }
 
+.scroll-area:nth-of-type(3) {
+  background: #ababab;
+}
+
 .scroll-area:nth-of-type(2) {
   background: #c94e4b;
 }
 
 .scroll-container::-webkit-scrollbar {
   display: none;
+}
+
+.skills-container {
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80vw;
+}
+
+.resume-button {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.center-button-wrapper {
+  display: flex;
+}
+
+.resume-button:hover, .resume-button:active {
+  color: #ffffff;
+  background: #009688;
+}
+
+.resume-button {
+  background: none;
+}
+
+.skills-body {
+}
+
+#skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#test {
+  display: none;
+}
+
+.skills-progress {
+  height: 10px;
+}
+
+.skills-heading {
+  margin-top: 8px;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-fill {
+  height: 14px;
+  background: #d13639;
 }
 
