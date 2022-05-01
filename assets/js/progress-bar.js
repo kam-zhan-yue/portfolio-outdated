@@ -3,12 +3,13 @@ jQuery(document).ready(function($) {
   initProgressBars();
 
   var animated = 0;
+  var offset = 0;
   var scrollContainer = $(".scroll-container");
   scrollContainer.scroll(function () {
     var skillsSection = $("#skills-section").height();
     var viewPortSize = $(scrollContainer).height();
     var scrollTop = scrollContainer.scrollTop();
-    if(scrollTop >= skillsSection && animated == 0) {
+    if(scrollTop >= skillsSection + offset && animated == 0) {
       animated = 1;
       animateProgressBars();
     }

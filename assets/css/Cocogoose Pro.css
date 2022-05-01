@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Cocogoose Pro';
+	src: url(../../assets/fonts/CocogoosePro.woff2) format('woff2'),
+	url(../../assets/fonts/CocogoosePro.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

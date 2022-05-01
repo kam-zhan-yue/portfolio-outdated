@@ -2,18 +2,15 @@ textarea {
   text-align: center;
 }
 
-section {
-  height: 100vh;
-}
-
 .profile-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -40%;
 }
 
 .profile-wrapper {
-  padding-top: 10%;
+  /*padding-top: 0;*/
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -36,12 +33,7 @@ section {
 
 .scroll-area {
   width: 100vw;
-  height: 100vh;
-  /*display: flex;*/
-  color: white;
-  margin: 0 auto;
   scroll-snap-align: start;
-  overflow: hidden;
 }
 
 .scroll-container {
@@ -56,11 +48,7 @@ section {
 }
 
 .scroll-area:nth-of-type(1) {
-  background: #49b293;
-}
-
-.scroll-area:nth-of-type(3) {
-  background: #ababab;
+  /*background: #49b293;*/
 }
 
 .scroll-area:nth-of-type(2) {
@@ -80,22 +68,23 @@ section {
 .resume-button {
   margin: 0 auto;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .center-button-wrapper {
   display: flex;
 }
 
-.resume-button:hover, .resume-button:active {
-  color: #ffffff;
-  background: #009688;
-}
-
-.resume-button {
-  background: none;
-}
-
 .skills-body {
+}
+
+#landing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #skills-section {
@@ -103,6 +92,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 #test {
@@ -134,8 +124,8 @@ section {
 
 .timeline {
   margin: 0 auto;
-  max-width: 750px;
-  padding: 25px;
+  max-width: 900px;
+  /*padding: 25px;*/
   display: grid;
   grid-template-columns: 3px 1fr;
   color: white;
@@ -146,7 +136,7 @@ section {
   top: 0;
   width: 12px;
   height: 12px;
-  background: white;
+  background: #AEAEAE;
   transform: translate(100%, -50%);
   border-radius: 50%;
 }
@@ -176,19 +166,24 @@ section {
   /*margin-top: 10px;*/
   margin-bottom: 10px;
   display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .timeline-horizontal-bar {
   position: absolute;
-  width: 20px;
+  width: 24px;
   height: 2px;
-  background: white;
+  background: #AEAEAE;
 }
 
 .read-more-container {
   display: flex;
   /*margin-top: 10px;*/
   margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  /*transform: translateX(-5%);*/
 }
 
 @media (min-width: 768px) {
@@ -207,13 +202,14 @@ section {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-left: 5px;
   background: transparent;
-  border: 3px solid white;
+  border: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .fab.fa-youtube {
-  transform: translateX(-10%);
+  transform: translate(70%, 60%) scale(1.7);
 }
 
 .media-button.website:hover . {
@@ -224,7 +220,7 @@ section {
 }
 
 .media-button.apple:hover .fa-apple {
-  color: #CCCCCC;
+  color: #FFFFFF;
   /*text-shadow: 0 0 15px #CCCCCC;*/
   transition: all 0.5s ease;
 }
@@ -248,24 +244,24 @@ section {
 }
 
 .media-button.apple:hover {
-  border: 3px solid #CCCCCC;
+  border: 2px solid black;
   /*box-shadow: 0 0 15px #CCCCCC;*/
   transition: all 0.5s ease;
-  background: transparent;
+  background: black;
 }
 
 .media-button.youtube:hover {
-  border: 3px solid #B91119;
+  border: 2px solid #B91119;
   /*box-shadow: 0 0 15px #B91119;*/
   transition: all 0.5s ease;
-  background: transparent;
+  background: white;
 }
 
 .media-button.google-play:hover {
-  border: 3px solid #1D7C48;
+  border: 2px solid #1D7C48;
   /*box-shadow: 0 0 15px #1D7C48;*/
   transition: all 0.5s ease;
-  background: transparent;
+  background: white;
 }
 
 .media-button.website:hover {
@@ -284,10 +280,118 @@ media-icon {
 }
 
 .fab.fa-google-play.media-icon {
-  transform: translate(-5%, -10%);
+  transform: translate(100%, 60%) scale(1.34);
 }
 
 .media-icon {
-  color: white;
+  color: black;
+}
+
+.minimal-button {
+  background: transparent;
+  border: 2px solid #270015;
+  border-radius: 50px;
+  padding: 8px 20px 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #270015;
+  text-decoration: none;
+}
+
+.read-more-button {
+}
+
+h3 {
+  color: #270015;
+  font-family: 'Rubik';
+  font-weight: bold;
+}
+
+h6 {
+  color: #270015;
+  font-family: 'Rubik';
+}
+
+p {
+  color: #270015;
+  font-family: 'Rubik';
+}
+
+.minimal-button:hover {
+  background: #270015;
+  color: #F9F9F9;
+  transition: 0.5s all ease;
+}
+
+.timeline-stop {
+  /*width: 0px;*/
+  /*background: #AEAEAE;*/
+  position: relative;
+}
+
+.timeline-bar {
+  width: 2px;
+  background: #AEAEAE;
+  position: relative;
+}
+
+h4 {
+  color: #270015;
+  font-family: 'Rubik';
+}
+
+h1 {
+  color: #270015;
+  font-family: 'Rubik';
+  font-weight: 900;
+}
+
+.heading-container {
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 1000px;
+  margin-bottom: 30px;
+}
+
+#landing-section {
+  height: 100vh;
+}
+
+.fab.fa-apple.media-icon {
+  transform: translate(115%, 50%) scale(1.82);
+}
+
+.timeline-carousel {
+  margin-bottom: 10px;
+  /*box-shadow: 0 0 15px black;*/
+}
+
+.timeline-img {
+  box-shadow: 0 0 15px black;
+}
+
+#personal-timeline-section {
+  background: #F9F9F9;
+  padding-top: 30px;
+}
+
+#personal-timeline-section {
+  background: #F9F9F9;
+  padding-top: 30px;
+}
+
+#professional-timeline-section {
+  background: #F9F9F9;
+  padding-top: 30px;
+}
+
+.scroll-area.remainder-area {
+  scroll-snap-align: start;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#end-scroll {
+  /*scroll-snap-align: end;*/
 }
 
