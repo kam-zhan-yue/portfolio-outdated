@@ -142,12 +142,152 @@ section {
 }
 
 .timeline-point {
-  position: initial;
+  position: absolute;
   top: 0;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background: white;
-  transform: translateX(-45%);
+  transform: translate(100%, -50%);
   border-radius: 50%;
+}
+
+..media-container {
+  display: flex;
+  align-items: center;
+}
+
+..media-container {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .media-container {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .media-container {
+    justify-content: flex-end;
+  }
+}
+
+.media-container {
+  /*margin-top: 10px;*/
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.timeline-horizontal-bar {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+}
+
+.read-more-container {
+  display: flex;
+  /*margin-top: 10px;*/
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .read-more-container {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .read-more-container {
+    justify-content: center;
+  }
+}
+
+.media-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  background: transparent;
+  border: 3px solid white;
+}
+
+.fab.fa-youtube {
+  transform: translateX(-10%);
+}
+
+.media-button.website:hover . {
+  border: 2px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+.media-button.apple:hover .fa-apple {
+  color: #CCCCCC;
+  /*text-shadow: 0 0 15px #CCCCCC;*/
+  transition: all 0.5s ease;
+}
+
+.media-button.youtube:hover .fa-youtube {
+  color: #B91119;
+  /*text-shadow: 0 0 15px #B91119;*/
+  transition: all 0.5s ease;
+}
+
+.media-button.google-play:hover .fa-google-play {
+  color: #1D7C48;
+  /*text-shadow: 0 0 15px #1D7C48;*/
+  transition: all 0.5s ease;
+}
+
+.media-button.website:hover .fa-globe {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.media-button.apple:hover {
+  border: 3px solid #CCCCCC;
+  /*box-shadow: 0 0 15px #CCCCCC;*/
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+.media-button.youtube:hover {
+  border: 3px solid #B91119;
+  /*box-shadow: 0 0 15px #B91119;*/
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+.media-button.google-play:hover {
+  border: 3px solid #1D7C48;
+  /*box-shadow: 0 0 15px #1D7C48;*/
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+.media-button.website:hover {
+  border: 2px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+fa-globe {
+  color: #3b5998;
+}
+
+media-icon {
+  color: white;
+}
+
+.fab.fa-google-play.media-icon {
+  transform: translate(-5%, -10%);
+}
+
+.media-icon {
+  color: white;
 }
 

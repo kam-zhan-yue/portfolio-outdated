@@ -52,8 +52,8 @@
 
 .timeline-entry {
   /*margin: 0 20px 20px 20px;*/
-  margin-top: -10px;
-  margin-left: 20px;
+  margin-top: -18px;
+  margin-left: 30px;
   margin-bottom: 20px;
 }
 
@@ -64,10 +64,8 @@
   border-radius: 50%;
 }
 
-.timeline-horizontal-bar {
-  width: 50px;
-  height: 10px;
-  background: red;
-  top: 10px;
+.timeline-year {
+  position: absolute;
+  transform: translate(-120%, 0%);
 }
 
