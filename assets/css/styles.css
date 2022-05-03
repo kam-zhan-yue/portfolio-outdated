@@ -398,7 +398,7 @@ h1 {
 
 #end-scroll {
   /*scroll-snap-align: end;*/
-  /*height: 100%;*/
+  /*height: 300vh;*/
   scroll-snap-stop: normal;
   /*margin-bottom: 10px;*/
 }
