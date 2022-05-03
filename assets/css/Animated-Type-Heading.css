@@ -53,7 +53,6 @@
 }
 
 .timeline-entry {
-  /*margin: 0 20px 20px 20px;*/
   margin-top: -15px;
   margin-left: 30px;
   margin-bottom: 20px;
@@ -64,10 +63,5 @@
   height: 25px;
   background: red;
   border-radius: 50%;
-}
-
-.timeline-year {
-  position: absolute;
-  transform: translate(-120%, 0%);
 }
 

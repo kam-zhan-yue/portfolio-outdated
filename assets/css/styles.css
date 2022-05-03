@@ -7,6 +7,8 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-top: -40%;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
 .profile-wrapper {
@@ -18,7 +20,6 @@ textarea {
 
 .scroll-snap {
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 
 .y-scroll-snap {
@@ -33,7 +34,6 @@ textarea {
 
 .scroll-area {
   width: 100vw;
-  scroll-snap-align: start;
 }
 
 .scroll-container {
@@ -41,7 +41,6 @@ textarea {
   /*font-size: 60px;*/
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin: 0 auto;
@@ -93,6 +92,7 @@ textarea {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  scroll-snap-stop: always;
 }
 
 #test {
@@ -124,7 +124,7 @@ textarea {
 
 .timeline {
   margin: 0 auto;
-  max-width: 900px;
+  /*max-width: 1320px;*/
   /*padding: 25px;*/
   display: grid;
   grid-template-columns: 3px 1fr;
@@ -186,15 +186,15 @@ textarea {
   /*transform: translateX(-5%);*/
 }
 
-@media (min-width: 768px) {
-  .read-more-container {
-    justify-content: flex-start;
-  }
-}
-
 @media (max-width: 768px) {
   .read-more-container {
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .read-more-container {
+    justify-content: flex-start;
   }
 }
 
@@ -346,10 +346,15 @@ h1 {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  .heading-container.h1 {
+    font-size: 10px;
+  }
+}
+
 .heading-container {
-  margin-left: 10%;
-  margin-top: 10%;
-  width: 1000px;
+  /*margin-top: 10%;*/
+  margin-left: -3px;
   margin-bottom: 30px;
 }
 
@@ -393,5 +398,67 @@ h1 {
 
 #end-scroll {
   /*scroll-snap-align: end;*/
+  /*height: 100%;*/
+  scroll-snap-stop: normal;
+  /*margin-bottom: 10px;*/
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-entry {
+    margin-left: -3px;
+  }
+}
+
+.timeline-offset {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .timeline-heading-offset {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-bar {
+    width: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline-carousel-inner {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-carousel-inner {
+    border-radius: 0;
+  }
+}
+
+.y-mandatory {
+  scroll-snap-type: y mandatory;
+}
+
+scroll-snap {
+  scroll-snap-align: start;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  /*outline: black;*/
+  height: 50%;
+  width: 50%;
+  /*background-size: 100% 100%;*/
+  /*border-radius: 50%;*/
+  /*border: 1px solid black;*/
+  /*background-image: none;*/
 }
 
