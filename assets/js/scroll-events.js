@@ -66,9 +66,9 @@ jQuery(document).ready(function($) {
     });
   });
 
-  $("#skill-unity").click(function(){
-      animateProgressBars();
-  });
+  // $("#skill-unity").click(function(){
+  //     animateProgressBars();
+  // });
 
   function initProgressBars() {
       $(".skill-fill").each(function() {
