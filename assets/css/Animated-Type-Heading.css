@@ -55,7 +55,7 @@
 .timeline-entry {
   margin-top: -15px;
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .timeline-dot {
@@ -63,5 +63,15 @@
   height: 25px;
   background: red;
   border-radius: 50%;
+}
+
+.timeline-list {
+  color: #270015;
+  font-family: 'Rubik';
+}
+
+#contact-section {
+  height: 100vh;
+  background: #F9F9F9;
 }
 
