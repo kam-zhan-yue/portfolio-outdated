@@ -33,17 +33,6 @@ textarea {
 }
 
 .scroll-area {
-  /*width: 80vvw;*/
-}
-
-.scroll-container {
-  width: 100%;
-  /*font-size: 60px;*/
-  height: 100vh;
-  overflow: scroll;
-  /*scrollbar-width: none;*/
-  /*-ms-overflow-style: none;*/
-  margin: 0 auto;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -55,6 +44,7 @@ textarea {
   margin-left: 10%;
   width: 80vw;
   margin-bottom: 20px;
+  /*display: none;*/
 }
 
 .resume-button {
@@ -86,10 +76,8 @@ textarea {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  scroll-snap-stop: always;
   background: #57C4B8;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px -30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset;
-  /*box-shadow: 0px -10px 20px red inset;*/
 }
 
 #test {
@@ -394,10 +382,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-#landing-section {
-  height: 100vh;
-}
-
 .fab.fa-apple.media-icon {
   transform: translate(115%, 55%) scale(1.82);
 }
@@ -433,10 +417,8 @@ h1 {
 }
 
 #end-scroll {
-  /*scroll-snap-align: end;*/
-  /*height: 300vh;*/
   scroll-snap-stop: normal;
-  /*margin-bottom: 10px;*/
+  /*display: none;*/
 }
 
 @media (max-width: 768px) {
@@ -481,7 +463,7 @@ h1 {
 }
 
 .y-mandatory {
-  /*scroll-snap-type: y mandatory;*/
+  scroll-snap-type: y mandatory;
 }
 
 scroll-snap {
@@ -536,5 +518,36 @@ scroll-snap {
 
 .fab.fa-instagram.contact-icon {
   transform: translateY(30px) scale(3);
+}
+
+#scroll-main {
+  max-height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  /*display: none;*/
+}
+
+#scroll-test-container-2 {
+  max-height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  display: none;
+}
+
+#scroll-main-container {
+  max-height: 100vh;
+  /*scroll-snap-type: y mandatory;*/
+  overflow-y: scroll;
+  /*display: none;*/
+}
+
+.scroll-test-child {
+  scroll-snap-align: start;
+  background: red;
+  max-height: 100vh;
+}
+
+#scroll-test-2 {
+  background: black;
 }
 

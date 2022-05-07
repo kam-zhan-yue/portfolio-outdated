@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
   var animated = 0;
   var classRemoved = 0;
   var offset = 0;
-  var scrollContainer = $(".scroll-container");
+  var scrollContainer = $("#scroll-main-container");
   scrollContainer.scroll(function () {
     var skillsPosition = $("#skills-section").offset().top;
     var skillsHeight = $("#skills-section").height();
@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
       {
         classRemoved = 1;
         console.log("Removed y-mandatory");
-        $("#scroll-main").removeClass("y-mandatory");
+        scrollContainer.removeClass("y-mandatory");
       }
     }
 
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
       {
         classRemoved = 0;
         console.log("test");
-        $("#scroll-main").addClass("y-mandatory");
+        scrollContainer.addClass("y-mandatory");
       }
     }
 
