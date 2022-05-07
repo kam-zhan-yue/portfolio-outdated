@@ -71,7 +71,8 @@
 }
 
 #contact-section {
-  height: 100vh;
+  /*height: 100vh;*/
   background: #F9F9F9;
+  padding-bottom: 50px;
 }
 

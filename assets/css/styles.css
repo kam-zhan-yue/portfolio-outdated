@@ -33,16 +33,16 @@ textarea {
 }
 
 .scroll-area {
-  width: 100vw;
+  /*width: 80vvw;*/
 }
 
 .scroll-container {
   width: 100%;
   /*font-size: 60px;*/
   height: 100vh;
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: scroll;
+  /*scrollbar-width: none;*/
+  /*-ms-overflow-style: none;*/
   margin: 0 auto;
 }
 
@@ -88,7 +88,8 @@ textarea {
   height: 100vh;
   scroll-snap-stop: always;
   background: #57C4B8;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px -30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset;
+  /*box-shadow: 0px -10px 20px red inset;*/
 }
 
 #test {
@@ -122,7 +123,7 @@ textarea {
 
 .timeline {
   margin: 0 auto;
-  /*max-width: 1320px;*/
+  max-width: 1000px;
   /*padding: 25px;*/
   display: grid;
   grid-template-columns: 3px 1fr;
@@ -176,7 +177,7 @@ textarea {
 
 @media (max-width: 768px) {
   .timeline-horizontal-bar {
-    width: 30px;
+    width: 35px;
     transform: translateX(-15px);
   }
 }
@@ -208,12 +209,22 @@ textarea {
   }
 }
 
+.contact-button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 2px solid black;
+  /*margin-left: 100px;*/
+  /*margin-right: 100px;*/
+}
+
 .media-button {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid #270015;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -267,6 +278,13 @@ textarea {
   background: white;
 }
 
+.custom-btn:hover {
+  /*border: 2px solid #1D7C48;*/
+  /*box-shadow: 0 0 15px #1D7C48;*/
+  transition: all 0.5s ease;
+  background: #270015;
+}
+
 .media-button.google-play:hover {
   border: 2px solid #1D7C48;
   /*box-shadow: 0 0 15px #1D7C48;*/
@@ -289,12 +307,20 @@ media-icon {
   color: white;
 }
 
+.fab.fa-google-play.contact-icon {
+  transform: translate(105%, 65%) scale(1.34);
+}
+
 .fab.fa-google-play.media-icon {
   transform: translate(105%, 65%) scale(1.34);
 }
 
+.contact-icon {
+  color: #270015;
+}
+
 .media-icon {
-  color: black;
+  color: #270015;
 }
 
 .minimal-button {
@@ -450,12 +476,12 @@ h1 {
 
 @media (max-width: 768px) {
   .timeline-carousel-inner {
-    border-radius: 0;
+    border-radius: 10px;
   }
 }
 
 .y-mandatory {
-  scroll-snap-type: y mandatory;
+  /*scroll-snap-type: y mandatory;*/
 }
 
 scroll-snap {
@@ -470,5 +496,45 @@ scroll-snap {
   /*border-radius: 50%;*/
   /*border: 1px solid black;*/
   /*background-image: none;*/
+}
+
+.fab.fa-github.contact-icon {
+  transform: translate(105%, 65%) scale(5);
+}
+
+.mail-custom-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.fa.fa-linkedin {
+  transform: translateY(30px) scale(3);
+}
+
+.fa.fa-github {
+  transform: translateY(30px) scale(3);
+}
+
+.fab.fa-itch-io {
+  transform: translateY(30px) scale(3);
+}
+
+.material-icons {
+  transform: translateY(30px) scale(2.3);
+}
+
+.contact-container {
+  max-width: 1000px;
+}
+
+.custom-btn:hover .contact-icon {
+  color: #f9f9f9;
+  transition: all 0.5s ease;
+}
+
+.fab.fa-instagram.contact-icon {
+  transform: translateY(30px) scale(3);
 }
 
