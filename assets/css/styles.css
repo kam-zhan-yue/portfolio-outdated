@@ -551,3 +551,7 @@ scroll-snap {
   background: black;
 }
 
+.hide {
+  opacity: 0;
+}
+
