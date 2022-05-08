@@ -419,6 +419,7 @@ h1 {
 #end-scroll {
   scroll-snap-stop: normal;
   /*display: none;*/
+  background: #F9F9F9;
 }
 
 @media (max-width: 768px) {
@@ -507,7 +508,7 @@ scroll-snap {
   transform: translateY(30px) scale(2.3);
 }
 
-.contact-container {
+.about-container {
   max-width: 1000px;
 }
 
@@ -552,6 +553,11 @@ scroll-snap {
 }
 
 .hide {
-  opacity: 0;
+  /*opacity: 0;*/
+}
+
+#about-section {
+  background: #F9F9F9;
+  padding-top: 30px;
 }
 

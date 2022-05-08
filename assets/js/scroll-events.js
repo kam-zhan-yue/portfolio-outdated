@@ -34,17 +34,15 @@ jQuery(document).ready(function($) {
       if(classRemoved == 0)
       {
         classRemoved = 1;
-        console.log("Removed y-mandatory");
         scrollContainer.removeClass("y-mandatory");
       }
     }
 
     if(classRemoved == 1)
     {
-      if(scrollTop <= skillsHeight)
+      if(scrollTop <= skillsHeight + 100)
       {
         classRemoved = 0;
-        console.log("test");
         scrollContainer.addClass("y-mandatory");
       }
     }
