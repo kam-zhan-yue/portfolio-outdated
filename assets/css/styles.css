@@ -128,13 +128,9 @@ textarea {
   border-radius: 50%;
 }
 
-..media-container {
+.media-container {
   display: flex;
   align-items: center;
-}
-
-..media-container {
-  display: flex;
 }
 
 @media (max-width: 768px) {
